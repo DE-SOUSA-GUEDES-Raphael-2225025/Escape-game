@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Escape Game</title>
+    <link href="../../stylesheet.css" rel="stylesheet">
+    <script src="../../game.js"></script>
+  </head>
+
+  <body>
+    <div id="backBox">
+      <a href="../../PDV/avant_gauche.html">
+        <img src="../../images/boutons/retour.png" width="75px" alt="Bouton retour">
+      </a>
+    </div>
+    <div id="container">
+      <img class="bg" src="../../images/ordi/fixe.jpg" alt="">
+    </div>
+  </body>
+
+  <input type="password" id="password" placeholder="Entrez votre mot de passe" style="position:absolute; left:44%; top:45%;" onkeydown="password(this)"> </input>
+
+  <script>
+    let passwordInput = document.getElementById("password");
+    passwordInput.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        let password = passwordInput.value;
+        console.log("Password entered: " + password);
+      
+      if (password == "2486" || password == "8624")
+      {
+        document.location.href="../pages_secrètes/hna5brv4dc.html"
+      }
+      else if (password === "ObaaSima" || password === "obaasima" || password === "ObaSima" || password === "obasima")
+      {
+        document.location.href="https://www.youtube.com/watch?v=cd0PV82e1jE"
+      }
+      else
+      {
+        alert("Mot de passe INCORRECT !");
+      }
+      }
+    });
+  </script>
+
+  <div id="notification">
+    <div id="notification-content">
+      <div id="notification-content">
+        Cette ordinateur est... <br>
+        <b>énigmatique.</b><br>
+        <br>
+        (appuyer sur entrer pour valider)
+      </div>
+    </div>
+    <span id="close-notification">&times;</span>
+</div>
+
+</html>
